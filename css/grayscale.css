@@ -191,14 +191,7 @@
   font-size: 90%;
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    font-size:0;
-}
-#navigation ul li a {
-    font-size:14px;
-}
+
 
 @media (min-width: 992px) {
   .projects-section .project-text {
@@ -304,3 +297,7 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
